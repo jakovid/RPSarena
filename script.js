@@ -5,9 +5,9 @@ let playerChoice = "placeholder";
 let playerScore = 0;
 let computerScore = 0;
 let round = 1;
-let announcement = "placeholder";
-let playerThrows = "placeholder";
-let computerThrows = "placeholder";
+let announcement = "to play the round";
+let playerThrows = "Press";
+let computerThrows = "1, 2, or 3";
 
 function playRound(playerChoice,computerChoice) {
 
@@ -33,6 +33,11 @@ function playRound(playerChoice,computerChoice) {
         computerScore++;
     }
     console.log("Player Score: " + playerScore + " | Computer Score: " + computerScore);
+    document.getElementById("ps").innerHTML = playerScore;
+    document.getElementById("cs").innerHTML = computerScore;
+    document.getElementById("pt").innerHTML = playerThrows;
+    document.getElementById("ct").innerHTML = computerThrows;
+    document.getElementById("res").innerHTML = announcement;
 }
 
 window.addEventListener('keydown', function(e) {

@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<script src="script.js"></script>
-
 <div class="header">
 
     <div class="left-header">Rock Beats Scissors</div>
@@ -69,21 +67,20 @@
 
         <div class="player-score">
 
-            <script>document.write(playerScore)</script>
+            <div id="ps">0</div>
 
         </div>
 
         <div class="round-results">
-            <script>document.write(playerThrows)</script>
-            <script>document.write(computerThrows)</script>
-            <script>document.write(announcement)</script>
+
+            <div id="pt">Press</div>
+            <div id="ct">1, 2, or 3</div>
+            <div id="res">to play the round</div>
 
         </div>
 
         <div class="computer-score">
-
-            <script>document.write(computerScore)</script>
-
+            <div id="cs">0</div>
         </div>
 
     </div>
@@ -125,3 +122,4 @@
 
 </div>
 
+<script src="script.js"></script>
