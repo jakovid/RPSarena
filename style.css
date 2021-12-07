@@ -1,0 +1,80 @@
+img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.title {
+    text-align: center;
+    padding: 25px;
+}
+
+.welcome {
+    font-size: 20px;
+}
+
+.RPS {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.RPS-sub {
+    font-style: italic;
+}
+
+.rules {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.game-left {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.game-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.player-score, .computer-score {
+    color: white;
+    font-size: 150px;
+    padding: 25px;
+}
+
+.player-score {
+    background-color: royalblue;
+}
+
+.computer-score {
+    background-color: crimson;
+}
+
+.game-right {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer, .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+    background-color: black;
+}
