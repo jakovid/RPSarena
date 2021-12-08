@@ -32,6 +32,17 @@ function playRound(playerChoice,computerChoice) {
         console.log(announcement);
         computerScore++;
     }
+
+    if (computerScore == 5) {
+        announcement = "The Computer beat you " + computerScore + " to " + playerScore;
+        playerScore = 0;
+        computerScore = 0;
+    } else if (playerScore == 5) {
+        announcement = "You beat the computer " + playerScore + " to " + computerScore;
+        playerScore = 0;
+        computerScore = 0;
+    } 
+
     console.log("Player Score: " + playerScore + " | Computer Score: " + computerScore);
     document.getElementById("ps").innerHTML = playerScore;
     document.getElementById("cs").innerHTML = computerScore;
